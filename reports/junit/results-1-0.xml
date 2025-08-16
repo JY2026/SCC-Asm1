@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="My Login application" timestamp="2025-08-16T18:46:26" time="4.509" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="My Login application"/>
+      <property name="capabilities" value="microsoftedge.139_0_3405_86.windows"/>
+      <property name="file" value="file:///C:/Users/USER/SCC%20Asm1/test/specs/test.e2e.ts"/>
+    </properties>
+    <testcase classname="microsoftedge.139_0_3405_86.windows.My_Login_application" name="should login with valid credentials" time="4.507">
+      <system-out><![CDATA[
+COMMAND: POST /session/badc8882c74bf97b6b86cd123003e88f/element/f.585E702FF3D4336282A16784A2BB64AB.d.47F79CABDD528BCF7A1640E63502AB7A.e.2/clear - {}
+RESULT: {}
+COMMAND: POST /session/badc8882c74bf97b6b86cd123003e88f/element/f.585E702FF3D4336282A16784A2BB64AB.d.47F79CABDD528BCF7A1640E63502AB7A.e.2/value - {"text":"tomsmith"}
+RESULT: {"text":"tomsmith"}
+COMMAND: POST /session/badc8882c74bf97b6b86cd123003e88f/element/f.585E702FF3D4336282A16784A2BB64AB.d.47F79CABDD528BCF7A1640E63502AB7A.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/badc8882c74bf97b6b86cd123003e88f/element/f.585E702FF3D4336282A16784A2BB64AB.d.47F79CABDD528BCF7A1640E63502AB7A.e.3/value - {"text":"SuperSecretPassword!"}
+RESULT: {"text":"SuperSecretPassword!"}
+COMMAND: POST /session/badc8882c74bf97b6b86cd123003e88f/element/f.585E702FF3D4336282A16784A2BB64AB.d.47F79CABDD528BCF7A1640E63502AB7A.e.4/click - {}
+RESULT: {}
+COMMAND: GET /session/badc8882c74bf97b6b86cd123003e88f/element/f.585E702FF3D4336282A16784A2BB64AB.d.8B524358B63DB67F457EEE0B492123E5.e.16/text - {}
+RESULT: {}
+COMMAND: DELETE /session/badc8882c74bf97b6b86cd123003e88f - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

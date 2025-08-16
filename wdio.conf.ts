@@ -127,7 +127,16 @@ export const config: WebdriverIO.Config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec','junit'],
+    reporters: [
+        'spec',
+        ['junit', {
+            outputDir: './reports/junit',   // folder to save XML files
+            outputFileFormat: function (options) {
+                // options.cid = capability ID (e.g. chrome, edge)
+                return `results-${options.cid}.xml`
+            }
+        }]
+    ],
 
     // Options to be passed to Jasmine.
     jasmineOpts: {
